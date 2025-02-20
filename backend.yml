@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend-api
-        image: dileepacr.azurecr.io/dileepacr:VERSION
+        image: acrdileep.azurecr.io/acrdileep:VERSION
         imagePullPolicy: Always
         env:
           - name: DB_CONN_STR

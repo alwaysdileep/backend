@@ -23,8 +23,8 @@ stages:
     - task: Docker@2
       displayName: 'Build Docker Image'
       inputs:
-        containerRegistry: 'dileepacr'
-        repository: 'dileepacr'
+        containerRegistry: 'acrdileep'
+        repository: 'acrdileep'
         command: 'build'
         Dockerfile: '**/Dockerfile'
         tags: |
@@ -41,8 +41,8 @@ stages:
     - task: Docker@2
       displayName: 'Push Docker Image' 
       inputs:
-        containerRegistry: 'dileepacr'
-        repository: 'dileepacr'
+        containerRegistry: 'acrdileep'
+        repository: 'acrdileep'
         command: 'push'
         tags: |
           $(version)
